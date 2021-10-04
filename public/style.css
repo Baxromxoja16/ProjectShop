@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    background: wheat;
+}
+h1 {
+  color: #363636;
+  text-align: center;
+}
+nav{
+    background-color: #363636;
+}
+.card-image {
+  height: 490px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-image img {
+  height: 90%;
+}
+.card{
+    border-radius: 30px;
+}
+.card .card-action:last-child{
+    border-radius: 30px;
+}
+.card .card-image .card-title{
+    bottom: -48px;
+    color: #000;
+}
+.row .col.m7{
+    width: 20%;
+}

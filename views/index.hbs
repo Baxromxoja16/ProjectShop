@@ -1,0 +1,27 @@
+<h1>Mobile phones</h1>
+<p>{{name}}</p>
+<div class="row">
+  <div class="asd">
+    {{#if allPhones.length}}
+      {{#each allPhones}}
+        <div class="col s2 offset-3">
+          <div class="card">
+            <div class="card-image">
+              <img src="{{img}}" alt="jpg" />
+              <span class="card-title">{{name}}</span>
+            </div>
+            <div class="card-content">
+              <p class="price">{{price}}</p>
+            </div>
+            <div class="card-action">
+              <a href="/add/{{id}}">View phone</a>
+              <a href="/add/{{id}}/edit">Edit</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    {{else}}
+      <p>here is empty</p>
+    {{/if}}
+  </div>
+</div>

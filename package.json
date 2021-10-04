@@ -1,0 +1,29 @@
+{
+  "name": "ProjectWithHBS_for_lesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MirzaabdullayevTest/ProjectWithHBS_for_lesson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MirzaabdullayevTest/ProjectWithHBS_for_lesson/issues"
+  },
+  "homepage": "https://github.com/MirzaabdullayevTest/ProjectWithHBS_for_lesson#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "uuid": "^8.3.2"
+  }
+}
