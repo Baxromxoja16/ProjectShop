@@ -6,6 +6,7 @@ const path = require('path')
 // Routes
 const homeRouter = require('./routes/home')
 const addRouter = require('./routes/add')
+const cardRouter = require('./routes/card')
 
 app.use(express.static(path.join(__dirname, 'public')))
 
@@ -23,6 +24,7 @@ app.set('views', 'views')
 
 app.use('/', homeRouter)
 app.use('/add', addRouter)
+app.use('/card', cardRouter)
 
 const port = 3000
 app.listen(port, () => {

@@ -34,3 +34,7 @@ nav{
 .row .col.m7{
     width: 20%;
 }
+.card .card-action{
+  display: flex;
+  justify-content: space-between  ;
+}
