@@ -8,17 +8,38 @@ const p = path.join(
 );
 
 class Card {
-  add(phone) {
+  static async add(phone) {
     const card = await Card.fetch();
 
     const idx = card.phones.findIndex((c) => c.id === phone.id);
     const candidate = card.phones[idx]
+
+    if (candidate) {
+      candidate.count++
+      card.candidate[idx] = candidate
+    } else {
+      phone.count = 1
+      card.phones.push(phone)
+    }
+
+    card.price += +phone.price
+
+    return new Promise((resolve, reject) => {
+      fs.writeFile(p, JSON.stringify(card), (err) => {
+        if (err) {
+          reject(err)
+        } else {
+          resolve()
+        }
+      })
+    })
+
   }
 
 
 
   static async fetch() {
-    return Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       fs.readFile(p, "utf-8", (err, content) => {
         if (err) {
           reject(err);

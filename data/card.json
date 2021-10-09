@@ -1,4 +1,1 @@
-{
-    "phones": [],
-    "price": 0
-}
+{"phones":[{"name":"Redmi ","price":"1000","img":"https://avatars.mds.yandex.net/get-mpic/3732535/img_id8791006942711877527.png/13hq","id":"cf50bf0b-4929-4e54-9296-2970f7c7d88b","count":1},{"name":"Iphone Pro max","price":"1500","img":"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-silver-select?wid=470&hei=556&fmt=png-alpha&.v=1631652956000","id":"3a3858e7-b58b-4370-913b-072371d8b285","count":1}],"price":2500}

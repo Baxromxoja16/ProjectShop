@@ -1,1 +1,33 @@
-<h1>This is SHopping card</h1>
+<h1>Корзина</h1>
+
+<div class="container">
+    {{#if models.length}}
+  <table>
+    <thead>
+      <tr>
+        <th>Model: </th>
+        <th>Count: </th>
+        <th>Price: </th>
+        <th>Boolean: </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {{#each models}}
+        <tr>
+          <td>{{name}}</td>
+          <td>{{count}}</td>
+          <td>{{price}}</td>
+          <td>
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <p><strong>Price: </strong> <span class="price">{{price}}</span></p>
+{{else}}
+  <p>Card is empty</p>
+{{/if}}
+</div>

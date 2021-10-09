@@ -9,10 +9,14 @@ router.post("/add", async (req, res) => {
   res.redirect("/card/add");
 });
 
-router.get('/add',(req,res)=>{
-    res.render('/card',{
-        title:'Shopping card'
-    })
+router.get('/add', async(req, res) => {
+  const card = await Card.fetch()
+  res.render('card', {
+    title: 'Shopping card',
+    models: card.phones,
+    price: card.price,
+    isCard: true
+  })
 })
 
 module.exports = router;
